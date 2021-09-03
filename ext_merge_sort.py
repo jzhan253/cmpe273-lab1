@@ -50,7 +50,7 @@ def read_file_sort(filename, combined_list):
 
 def main():
     root_path = os.getcwd()
-    file_path = root_path + '\input'
+    file_path = root_path + '/input'
     combined_list = []
     for filename in os.listdir(file_path):
         read_file_sort(filename, combined_list)
