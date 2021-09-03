@@ -1,10 +1,10 @@
 # Lab 1
-
+Use any kind of [External Sorting](https://en.wikipedia.org/wiki/External_sorting) algorithm to sort all numbers from input/unsorted_*.txt files and save the sorted result into output/sorted.txt file amd async_sorted.txt file.
 # Analysis
 with modern cpu's computing power, sorting lists and write the result to files takes very little time. Thus, the asynchronous concurrent tasks performance advantages brought by asyncio was not very obivous while comparing it with synchronous computing. With or without async, both sorting/writing tasks were done within 0.1 seconds, and the synchronous version was evern a little faster. My guess was because of using async api cause some little extra time. 
 To present the advantages brought by the asyncio, I inserted "time.sleep(1)" and "await asyncio.sleep(1)" into the synchronous and asynchronous function to increase the computing time. And synchronous method takes over 10 seconds(1 second after 1 second) to finish the job, however, asynchronous method takes only about 1 second(10 1-second jobs works concurrently) to finish the job.  
 
-Use any kind of [External Sorting](https://en.wikipedia.org/wiki/External_sorting) algorithm to sort all numbers from input/unsorted_*.txt files and save the sorted result into output/sorted.txt file amd async_sorted.txt file.
+
 
 # Requirements
 
