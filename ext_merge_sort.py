@@ -1,6 +1,5 @@
 import time
 import os
-import asyncio
 
 
 def sort(arr):
@@ -62,6 +61,4 @@ def main():
 
 
 if __name__ == "__main__":
-    start_time = time.time()
     main()
-    print(time.time() - start_time)
